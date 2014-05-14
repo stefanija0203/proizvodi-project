@@ -1,5 +1,9 @@
 @import 'bootstrap';
 @import 'bourbon';
+@import 'neat';
+
+$green: #47a447;
+$blue: #2d719f;
 
 .first {
 	.fluid-container {
@@ -19,7 +23,7 @@
 			}
 			.line {
 				@include size(70px 5px);
-				background-color: #47a447;
+				background-color: $green;
 			}
 			.apl-info {
 				font-size: 1.4em;
@@ -32,7 +36,7 @@
 				}
 				.mysize {
 					width: 68%;
-					height: 45px;
+					height: 46px;
 				}
 				.btn {
 					border-radius: 4px;
@@ -51,7 +55,7 @@
 		}
 		.line {
 			height: 3px;
-			background-color: #47a447;
+			background-color: $green;
 			margin-top: 3%;
 		}
 		.text {
@@ -74,7 +78,7 @@
 			}
 			.mysize {
 				width: 50%;
-				height: 45px;
+				height: 46px;
 			}
 			.btn {
 				border-radius: 4px;
@@ -83,4 +87,95 @@
 			}
 		}
 	}
+}
+
+.teaser1 {
+	@include clearfix;
+	background-color: $blue;
+	@include radial-gradient(#9BC9D7, #06789c);
+	font-family: "Lato", serif;
+	text-align: center;
+	color: white;
+	.apl-name {
+		font-size: 8em;
+		padding-top: 17.5%;
+	}
+	.apl-info {
+		font-family: "Lemon", serif;
+		font-size: 1.6em;
+		margin-top: -1%;
+	}
+	.text {
+		text-align: center;
+		font-size: 3.5em;
+	}
+	form {
+		margin: 2% 0px 20% 0px;
+		.mysize {
+			height: 46px;
+			border: 2px solid $green;
+		}
+		.b-style {
+			background-color: $green;
+			color: white;
+			border-color: $green;	
+		}
+	}
+}
+
+.teaser2 {
+	.fluid-container {
+		color: white;
+		.col-md-12 {	
+			background-color: $blue;
+			display: inline-block;
+			padding: 120px;
+			.apl-name {
+				font-size: 8em;
+				/*background-color: $green;*/
+			}
+			.soon {
+				background-color: #400035;
+				font-size: 5em;
+				font-weight: bold;
+				text-align: center;
+				padding: 15px;
+				margin-top: 5px;
+				.border {
+					padding: 10px 0px;
+					background-color: #400035;
+					border: 8px solid white;
+				}
+
+			}
+		}
+		.col-md-6 {
+			height: 365px;
+			font-size: 1.8em;
+			padding: 120px;
+		}
+		.apl-info {
+			background-color: $blue/1.1;
+		}
+		.form {
+			background-color: $blue/1.2;
+			.input-group {
+				margin-top: 30px;
+				.i-style {
+					height: 46px;
+					border: 2px solid $green;
+				}
+				.b-style {
+					color: white;
+					background-color: $green;
+					border-color: $green;
+				}
+			}
+		}
+	}
+}
+
+
+.teaser3 {
+
 }
