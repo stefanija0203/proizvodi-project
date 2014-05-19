@@ -1,5 +1,4 @@
 @import 'custom';
-@import 'jquery.fullPage';
 @import 'bourbon';
 @import 'neat';
 

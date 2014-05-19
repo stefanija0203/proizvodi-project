@@ -358,3 +358,253 @@ $blue: #2d719f;
 		}
 	}
 }
+
+.cue {
+	@include outer-container;
+	color: #818181;
+	header {
+		@include span-columns(12);
+		position: fixed;
+		padding: 10px 200px;
+		margin-left: -200px;
+		background-color: white;
+		opacity: 0.8;
+		a {
+			@include span-columns(1);
+		}
+		ul {
+			@include span-columns(6);
+			@include shift(1);
+			margin-top: 50px;
+			li {
+				@include span-columns(1.2 of 6);
+				display: inline-block;
+				a {	
+					@include span-columns(10);
+					@include shift(1);
+					.logo {
+						height: 40px;
+						border: 4px solid #cccccc;
+					}
+					.name {
+						display: none;
+					}
+				}
+			}
+			.blue {
+				&:hover {
+					.logo {
+						border-color: blue;
+					}
+					.name {
+						display: block;
+						color: blue;
+						margin-left: -14px;
+						text-decoration:  none;
+					}
+				}	
+			}
+			.purple {
+				&:hover {
+					.logo {
+						border-color: purple;
+					}
+					.name {
+						display: block;
+						color: purple;
+						text-align: center;
+						text-decoration:  none;
+					}
+				}	
+			}
+			.red {
+				&:hover {
+					.logo {
+						border-color: red;
+					}
+					.name {
+						display: block;
+						color: red;
+						margin-left: -13px;
+						text-decoration:  none;
+					}
+				}	
+			}
+			.yellow {
+				&:hover {
+					.logo {
+						border-color: yellow;
+					}
+					.name {
+						display: block;
+						color: yellow;
+						text-align: center;
+						text-decoration:  none;
+					}
+				}	
+			}
+			.green {
+				&:hover {
+					.logo {
+						border-color: green;
+					}
+					.name {
+						display: block;
+						color: green;
+						text-decoration:  none;
+					}
+				}	
+			}
+		}
+		button {
+			@include span-columns(3);
+			@include shift(1);
+			background-color: #FCCE01;
+			border-style: none;
+			color: white;
+			font-size: 1.7em;
+			padding: 10px 0px;
+			margin-top: 45px;
+		}
+	}
+	.first {
+		@include span-columns(12);
+		@include clearfix;
+		padding: 200px 0px 50px 0px;
+		img {
+			width: 100%;
+			height: 515px;
+		}
+	}
+	.second {
+		@include span-columns(12);
+		@include clearfix;
+		padding: 200px 0px 160px 0px;
+		.left {
+			@include span-columns(6);
+			img {
+				@include span-columns(9);
+				@include shift(2);
+				margin-top: 150px;
+			}
+		}
+		.right{
+			@include span-columns(6);
+			.title {
+				font-size: 3.5em;
+			}
+			p {
+				font-size: 1.4em;
+				padding: 8px 0px;
+			}
+		}
+	}
+	.third {
+		@include span-columns(12);
+		@include clearfix;
+		.left {
+			@include span-columns(7);
+			margin-top: 300px;
+			.title {
+				font-size: 3.5em;
+			}
+			p {
+				font-size: 1.4em;
+				padding: 8px 0px;
+			}
+		}
+		.right {
+			@include span-columns(5);
+		}
+	}
+	.fourth {
+		img {
+			width: 100%;
+			height: 770px;
+		}
+		.right {
+			@include span-columns(6);
+			@include shift(6);
+			position: relative;
+			margin-top: -500px;
+			.title {
+				font-size: 3.5em;
+			}
+			p {
+				font-size: 1.4em;
+				padding: 8px 0px;
+			}
+		}
+	}
+	.six {
+		background-color: #f3f3f4;
+		color: #808282;
+		.f1 {
+			background-color: #808282;
+			padding: 10px 0px;
+			span {
+				img {
+					width: 14%;
+					margin: 1%;
+				}
+			}
+		}
+		.f2 {
+			@include span-columns(10);
+			@include shift(1);
+			text-align: center;
+			font-size: 2em;
+			border-bottom: 1px solid #818181;
+			padding: 25px 0px 15px 0px;
+			span {
+				margin: 0px 14px;
+			}
+		}
+		.f3 {
+			@include span-columns(10);
+			@include shift(1);
+			text-align: center;
+			font-size: 2em;
+			text-align: center;
+			border-bottom: 1px solid #818181;
+			padding: 45px 0px 65px 0px;
+			input {
+				border-radius: 0px;
+			}
+			button {
+				border-radius: 0px;
+				background-color: #FCCE01;
+				color: white;
+				border-color: #FCCE01;
+			}
+		}
+		.f4 {
+			@include span-columns(10);
+			@include shift(1);
+			text-align: center;
+			font-size: 2em;
+			border-bottom: 1px solid #818181;
+			text-decoration: underline;
+				padding: 25px;
+			a {
+				color: #808282;
+			}
+		}
+		.f5 {
+			@include span-columns(10);
+			@include shift(1);
+			text-align: center;
+			border-bottom: 1px solid #818181;
+			padding: 25px;
+			span {
+				margin: 0px 10px;
+			}
+		}
+		.f6 {
+			@include span-columns(10);
+			@include shift(1);
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+}
