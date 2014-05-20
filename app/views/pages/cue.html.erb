@@ -1,32 +1,47 @@
-<div class="cue">
+<div class="cue" id="fullpage">
 	<header>
-		<a href="/"><img src="<%= image_path('logo.png')%>"></a>
+		<a href="/"><img class="logo" src="<%= image_path('logo.png')%>"></a>
 		<ul>
-			<li class="blue"> <a href="/"> <div class="logo"></div> <p class="name">Testosterone</p></a></li>
-			<li class="purple"> <a href="/"> <div class="logo"></div> <p class="name">Fertility</p></a></li>
-			<li class="red"> <a href="/"> <div class="logo"></div> <p class="name">Inflammation</p></a></li>
-			<li class="yellow"> <a href="/"> <div class="logo"></div> <p class="name">VitaminD</p></a></li>
-			<li class="green"> <a href="/"> <div class="logo"></div> <p class="name">Influenza</p></a></li>
+			<li class="blue"> <a href=""> <img src="<%= image_path('nav1.png')%>"></a> <p class="name">Testosterone</p></li>
+			<li class="purple"> <a href=""> <img src="<%= image_path('nav2.png')%>"></a> <p class="name">Fertility</p></li>
+			<li class="red"> <a href=""> <img src="<%= image_path('nav3.png')%>"></a> <p class="name">Inflammation</p></li>
+			<li class="yellow"> <a href=""> <img src="<%= image_path('nav4.png')%>"></a> <p class="name">VitaminD</p></li>
+			<li class="green"> <a href=""> <img src="<%= image_path('nav5.png')%>"></a> <p class="name">Influenza</p></li>
 		</ul>
 		<button>Pre-Order now</button>
 	</header>
-	<div class="first">
+	<div class="first section active">
 		<img src="<%= image_path('first.jpg')%>">
 	</div>
-	<div class="second">
+	<div class="second section">
 		<div class="left">
 			<img src="<%= image_path('first.jpg')%>">
 		</div>
 		<div class="right">
 			<p class="title">Discover Yourself</p>
 			<p>Cue is a deep health tracker that lets you go beyond tracking steps and your weight.</p>
-			<p>Easily access deeper information from your body.</p>
-			<p>Load a cartridge,</p>
-			<p>add a sample,</p>
-			<p>and get results on your phone.</p>
+			<p id="first">Easily access deeper information from your body.</p>
+			<p id="second">Load a cartridge,</p>
+			<p id="third">add a sample,</p>
+			<p id="fourth">and get results on your phone.</p>
+			<div id="fifth">
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+				<span><img src="<%= image_path('points.png')%>"></span>
+			</div>
+			<div id="sixth"><img src="<%= image_path('points.png')%>"></div>
+			<div id="seventh"><img src="<%= image_path('points.png')%>"></div>
+			<div id="eighth"><img src="<%= image_path('bluetooth.png')%>"></div>
 		</div>
 	</div>
-	<div class="third">
+	<div class="third section">
 		<div class="left">
 			<p class="title">Information is Power</p>
 			<p>See how your body is responding to your lifestyle at the molecular level</p>
@@ -34,17 +49,30 @@
 			<p>so that you can create the best story for yourself</p>
 		</div>
 		<div class="right">
-			<img src="<%= image_path('mob.png')%>">
+			<!-- <img src="<%= image_path('mob.png')%>"> -->
+			<div class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="<%= image_path('car1.png')%>">
+					</div>
+					<div class="item">
+						<img src="<%= image_path('car2.png')%>">
+					</div>
+					<div class="item">
+						<img src="<%= image_path('car3.png')%>">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="fourth">
+	<div class="fourth section">
 		<img src="<%= image_path('fourth.jpg')%>">
 		<div class="right">	
 			<p class="title">Empowering</p>
 			<p>Be your most motivated, happy, healthy self.</p>
 		</div>
 	</div>
-	<div class="six">
+	<div class="six section">
 		<div class="f1">
 			<span> <img src="<%= image_path('img1.png')%>"></span>
 			<span> <img src="<%= image_path('img2.png')%>"></span>
@@ -53,41 +81,43 @@
 			<span> <img src="<%= image_path('img5.png')%>"></span>
 			<span> <img src="<%= image_path('img6.png')%>"></span>
 		</div>
-		<div class="f2">
-			<span><a href="/"></a>Home</span>
-			<span><a href="/"></a>Product</span>
-			<span><a href="/"></a>About</span>
-			<span><a href="/"></a>FAQ</span>
-			<span><a href="/"></a>Press</span>
-			<span><a href="/"></a>Contact</span>
-			<span><a href="/"></a>Legal</span>
-		</div>
-		<div class="f3">
-			<p>Subscribe to our mail list</p>
-			<div class="form-group">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="input-group">
-						<input type="text" class="form-control mysize" placeholder="Your email">
-						<span class="input-group-btn">
-					    	<button class="btn btn-default b-style" type="button">Sign up</button>
-						</span>
+		<div class="padding">	
+			<div class="f2">
+				<span><a href="/"></a>Home</span>
+				<span><a href="/"></a>Product</span>
+				<span><a href="/"></a>About</span>
+				<span><a href="/"></a>FAQ</span>
+				<span><a href="/"></a>Press</span>
+				<span><a href="/"></a>Contact</span>
+				<span><a href="/"></a>Legal</span>
+			</div>
+			<div class="f3">
+				<p>Subscribe to our mail list</p>
+				<div class="form-group">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="input-group">
+							<input type="text" class="form-control mysize" placeholder="Your email">
+							<span class="input-group-btn">
+						    	<button class="btn btn-default b-style" type="button">Sign up</button>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="f4">
-			<a href="/">Download Media Kit</a>
-		</div>
-		<div class="f5">
-			<span><a href="/"><img src="<%= image_path('logo1.png')%>"></a></span>
-			<span><a href="/"><img src="<%= image_path('logo2.png')%>"></a></span>
-			<span><a href="/"><img src="<%= image_path('logo3.png')%>"></a></span>
-			<span><a href="/"><img src="<%= image_path('logo4.png')%>"></a></span>
-			<span><a href="/"><img src="<%= image_path('logo5.png')%>"></a></span>
-			<span><a href="/"><img src="<%= image_path('logo6.png')%>"></a></span>
-		</div>
-		<div class="f6">
-			<p> &copy; Cue 2014. In assotiation with Immortalana Inc.</p>
+			<div class="f4">
+				<a href="/">Download Media Kit</a>
+			</div>
+			<div class="f5">
+				<span><a href="/"><img src="<%= image_path('logo1.png')%>"></a></span>
+				<span><a href="/"><img src="<%= image_path('logo2.png')%>"></a></span>
+				<span><a href="/"><img src="<%= image_path('logo3.png')%>"></a></span>
+				<span><a href="/"><img src="<%= image_path('logo4.png')%>"></a></span>
+				<span><a href="/"><img src="<%= image_path('logo5.png')%>"></a></span>
+				<span><a href="/"><img src="<%= image_path('logo6.png')%>"></a></span>
+			</div>
+			<div class="f6">
+				<p> &copy; Cue 2014. In assotiation with Immortalana Inc.</p>
+			</div>
 		</div>
 	</div>
 </div>
