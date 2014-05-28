@@ -35,17 +35,11 @@ $(document).ready(function() {
 				$('#eighth').finish();
 			}
 			if((current==3 && next==4) || (current==5 && next==4)) {
-				// function ani(){
-				// 	$('.fourth-right').animate({'margin-top': '80px'}, 4000, function(){
-				// 		$('.fourth-right').css('margin-top','10px');
-				// 		ani();
-				// 	});
-				// };
-				// ani();
-
-				// .fourth-right.animate({top: '70px'}, "slow");
-
-				// $('.fourth-right').animate({top: 70px}, 2000, "swing");
+				$('#anim').animate({marginTop: "100px"}, 1500);
+			}
+			if(current==4) {
+				setTimeout(function(){
+					$('#anim').finish().removeAttr('style');}, 1000);
 			}
 		}
 	});
