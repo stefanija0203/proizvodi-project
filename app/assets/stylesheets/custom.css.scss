@@ -89,12 +89,13 @@ $blue: #2d719f;
 	font-family: "Lato", sans-serif;
 	color: white;
   height: 100%;
+  font-size: 12px;
 
   .app-name {
     font-size:3em;
     /*padding-top: 30px;*/
     font-weight: bold;
-    margin-left: -40px;
+    /*margin-left: -40px;*/
   }
 
 	.apl-name {
@@ -113,9 +114,8 @@ $blue: #2d719f;
     /*border-radius: 5px; */
   }
   .call-to-action {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: left;
-  
   }
 }
 
