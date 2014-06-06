@@ -77,7 +77,10 @@ body {
       @include span-columns(3.95);
       @include clearfix;
       padding: 20px 9px;
-      background-color: #f1f1f1;
+      background-color: #f8f8f8;
+      .mob-info {
+        margin: -40px 0px 0px -8px;
+      }
       form {
         margin-bottom: 15px;
       }

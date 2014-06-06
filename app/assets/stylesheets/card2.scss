@@ -89,6 +89,9 @@ body {
       @include clearfix;
       padding: 20px 9px;
       background-color: #f1f1f1;
+      .mob-info {
+        margin: -40px 0px 0px -8px;
+      }
       form {
         margin-bottom: 15px;
       }
