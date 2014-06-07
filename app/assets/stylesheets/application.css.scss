@@ -4,6 +4,10 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
-@import 'card1';
+body {
+  font-family: "Ubuntu", serif;
+}
 @import 'card2';
+@import 'card1';
+@import 'card3';
 

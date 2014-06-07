@@ -38,25 +38,27 @@ $green: #39aa01;
     .title {
       font-size: 0.86em;
       height: 62px;
+      padding-top: 4px;
     }
     .manufacturer {
       @include span-columns(12);
       font-size: 0.8em;
       color: $gr*2;
       height: 16px;
+      margin-top: -5px;
       .right {
         float: right;
         padding-right: 5px;
         font-size: 1.5em;
         margin-top: -5px;
         .fa-check-circle {
-          color: #35aa35;
+          color: #27ae61;
         }
         .fa-question-circle {
-          color: #ffd433;
+          color: #f2c311;
         }
         .fa-warning {
-          color: #e86610;
+          color: #d55401;
         }
       }
     }
@@ -64,22 +66,15 @@ $green: #39aa01;
 }
 
 body {
-  font-family: 'Ubuntu', serif;
-  color: black;
   .new {
     @include outer-container;
     background-color: white;
-    background-image: url('mob.png');
-    background-repeat: no-repeat;
-    padding: 111px 30px;
-    margin-top: 80px;
     .newcont {
       @include span-columns(3.95);
       @include clearfix;
-      padding: 20px 9px;
       background-color: #f8f8f8;
       .mob-info {
-        margin: -40px 0px 0px -8px;
+        margin: 0px 0px 10px -6px;
       }
       form {
         margin-bottom: 15px;
