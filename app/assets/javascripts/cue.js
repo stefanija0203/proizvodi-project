@@ -47,6 +47,9 @@ $(document).ready(function() {
 			}
 			if((current==2 && next==3) || (current==4 && next==3)) {
 				$(".load_third").css("background-color", "#f9423a");
+					$('.carousel').carousel({
+						interval: 2000
+					});
 			}
 			if(current==3) {
 				$(".load_third").css("background-color", "#808285");
@@ -84,7 +87,5 @@ $(document).ready(function() {
 		$(this).css("background-color", "#f9423a");
 	});
 
-	$('.carousel').carousel({
-		interval: 2000
-	});
+
 });

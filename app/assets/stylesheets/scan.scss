@@ -1,0 +1,10 @@
+$blue: #3986c0;
+$sens: #e6e6e6;
+$max-width: 299px;
+
+.row {
+  .scan {
+    @include size(299px, 474px);
+    margin-left: -18px;
+  }
+}

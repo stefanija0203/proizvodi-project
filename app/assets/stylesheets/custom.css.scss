@@ -573,16 +573,10 @@ $blue: #2d719f;
 			background-repeat: no-repeat;
 			margin-top: 80px;
 			.carousel {
-				padding: 30px 30px;
-				@include size(296px 525px);
+				padding: 0px 30px;
+				margin-top: -124px;
 				.carousel-inner {
-					@include size(296px 525px);
-					.item {
-						@include size(296px 525px);
-					}
-					img {
-						@include size(296px 525px);
-					}
+					@include size(299px 500x);
 				}
 			}
 		}
