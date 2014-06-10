@@ -1,0 +1,27 @@
+.mob-mockup {
+  color: #818181;
+  
+  .section {
+    padding: 0% 15%;
+    .back-left {
+      background-image: url('mob.png');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      height: 100%;
+    }
+    .back-right {
+      background-image: url('mob.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      height: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 0px;
+        right: 27px;
+      }
+    }
+    
+  }
+  
+}
