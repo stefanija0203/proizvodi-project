@@ -3,25 +3,26 @@
   <div class="section home">
     <div class="blue">  
       <div class="row">
-        <div class="col-lg-6 col-md-6">
+        <div class="header">
           <%= image_tag('navbar_white_1.png', class: "logo")%>
           <span class="headline">ideus</span>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <ul class="list-inline">
-            <li>
-              <a href="">TIM</a>
-              <a href="">BLOG</a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="list-inline">
+              <li>
+                <a href="">TIM</a>
+                <a href="">PARTNERI</a>
+                <a href="">BLOG</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
 
       <div class="row2">
         <div class="col-lg-6 col-md-6 text">
           <h1>Birajmo bolje zajedno</h1>
-          <p>Da li imate problema da izaberete najbolji proizvod za vas ili vaše najbliže</p>
-          <p>Mi imamo. Zato stvaramo <strong>Ideus</strong>, online mjesto koje spaja ljude željne da nauče više o proizvodima kao i da to znanje podijele sa drugima</p>
+          <p>Da li imate problema da izaberete najbolji proizvod za vas ili vaše najbliže?</p>
+          <p>Mi imamo. Zato stvaramo <strong>Ideus</strong>, online mjesto koje spaja ljude željne da nauče više o proizvodima kao i da to znanje podijele sa drugima.</p>
         </div>
         <div class="col-lg-6 col-md-6 right">
           <div class="input-group">
@@ -31,10 +32,9 @@
             </span>
           </div>
           <h5>Ukoliko želiš da nam pomognes prijavi se i postani deo Ideus zajednice</h5>
-          <div class="msg">
-            <p>Ukoliko našu ideju smatrate zanimljivom, iskoristite šansu i dajte svoj glas za <strong>Ideus</strong> na sajtu</p>
-            <div class="oi"><a href="http://otvoreneideje.me/OI2014/"><%= image_tag('logooi.png')%></a></div>
-          </div>
+        </div>
+        <div class="msgcol-lg-12 ">
+          <p>Ukoliko našu ideju smatrate zanimljivom, iskoristite šansu i dajte svoj glas za <strong>Ideus</strong> na sajtu <a href="http://otvoreneideje.me/OI2014/"><%= image_tag('logooi.png')%></a></p>
         </div>
         <a class="scroll" href=""><i class="fa fa-chevron-down"></i></a>
       </div>
@@ -186,7 +186,7 @@
       <%= image_tag('points.png')%> <%= image_tag('points.png', class: "points-right")%> <br/>
     </div>
     <div class="top">  
-      <h1>Skenirajte ili pretrazite</h1>
+      <h1>Skenirajte ili pretražite</h1>
     </div>
     <div class="col-lg-4 col-md-4 back-left">
       <%= image_tag('car3.png')%>

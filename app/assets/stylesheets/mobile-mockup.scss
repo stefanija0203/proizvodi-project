@@ -107,7 +107,7 @@ $back: #333333;
     }
     .call-to-action {
       height: 82%;
-      padding: 18%; 
+      padding: 13%; 
       img {
         @include size(170px 230px);
         float: right;
@@ -178,23 +178,37 @@ $back: #333333;
       background-color: #3686be;
       padding: 0% 15%;
       .row {
-       .headline {
-          color: white;
-          font-size: 3.2em;
-          margin: 0% 0% 0% 0%;
-        }
-        .list-inline {
-          /*margin-top: 5px;*/
-          float: right;
-          a {
-            color: white;
-            font-size: 1.3em;
-            margin-left: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        .header {
+          .logo {
+            width: 51 px;
+            height: 60px;
+            margin-top: -2%;
           }
-        }
-        .logo {
-          width: 51 px;
-          height: 60px;
+         .headline {
+            color: white;
+            font-size: 3.2em;
+          }
+          nav {
+            display: inline-block;
+              float: right;
+              padding: 2% 0%;
+            ul {
+              li {
+                a {
+                margin-left: 32px;
+                  color: white;
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  font-weight: bold;;
+                  text-decoration: none;
+                  letter-spacing: 1px;
+                }
+              }
+            }
+          }
+          
         }
       }
       .row2 {
