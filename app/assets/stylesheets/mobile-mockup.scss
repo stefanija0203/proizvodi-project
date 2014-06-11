@@ -10,7 +10,40 @@ $back: #333333;
   }
 
   .section {
-    
+    .points {
+      /*display: none;*/
+      position: absolute;
+      width: 70%;
+      .points-right {
+        float: right;
+      }
+      .points-margin {
+        margin-left: 4px;
+        &:first-child {
+          margin-left: 0px;
+        }
+      }
+    }
+    .points-section1 {
+      padding: 16% 12.7% 0% 13.1%;
+    }
+    .points-section2 {
+      padding: 0% 12.9% 0% 13.1%;
+    }
+    .points-section3 {
+      padding: 0% 13.2% 0% 13.1%;
+    }
+    .points-section4 {
+      padding: 0% 13.2% 0% 13.1%;
+    }
+    .top {
+      height: 30%;
+      text-align: center;
+      h1  {  
+        font-size: 4em;
+        padding: 16%;
+      }
+    }
     .back-left {
       background-image: url('mob.png');
       background-repeat: no-repeat;
@@ -34,15 +67,26 @@ $back: #333333;
         bottom: 0px;
         right: 27px;
       }
+
+    }
+    .back2-right {
+      background-image: url('back.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      height: 100%;
+      position: relative;
       #screen-details-1 {
+        position: absolute;
         bottom: -338px;
+        right: 30px;
         clip: rect(0px, 299px, 503px, 0px);
       } 
       #screen-details-2 {
+        position: absolute;
         bottom: -206px;
+        right: 30px;
         clip: rect(0px, 299px, 709px, 0px);
       } 
-
     }
     .describe {
       padding-top: 26%;
@@ -54,7 +98,13 @@ $back: #333333;
         margin-top: 6%;
       }  
     }
-
+    .padd {
+      font-size: 1.3em;
+      margin-top: 13.5%;
+    }
+    .col-lg-4 {
+      height: 70%;
+    }
     .call-to-action {
       height: 82%;
       padding: 18%; 
