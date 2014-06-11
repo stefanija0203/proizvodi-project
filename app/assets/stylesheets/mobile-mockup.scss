@@ -34,6 +34,15 @@ $back: #333333;
         bottom: 0px;
         right: 27px;
       }
+      #screen-details-1 {
+        bottom: -338px;
+        clip: rect(0px, 299px, 503px, 0px);
+      } 
+      #screen-details-2 {
+        bottom: -206px;
+        clip: rect(0px, 299px, 709px, 0px);
+      } 
+
     }
     .describe {
       padding-top: 26%;
@@ -117,12 +126,12 @@ $back: #333333;
       position: relative;
       height: 90%;
       background-color: #3686be;
-      padding: 1% 15%;
+      padding: 0% 15%;
       .row {
        .headline {
           color: white;
           font-size: 3.2em;
-          margin: 5% 0% 0% 1%;
+          margin: 0% 0% 0% 0%;
         }
         .list-inline {
           /*margin-top: 5px;*/
@@ -131,9 +140,11 @@ $back: #333333;
             color: white;
             font-size: 1.3em;
             margin-left: 30px;
-            letter-spacing: 2px;
-            font-weight: bold;
           }
+        }
+        .logo {
+          width: 51 px;
+          height: 60px;
         }
       }
       .row2 {
