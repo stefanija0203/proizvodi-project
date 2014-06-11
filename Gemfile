@@ -21,6 +21,8 @@ gem 'title'
 gem 'uglifier'
 gem 'unicorn'
 gem 'bootstrap-sass', '~> 3.1.1' 
+gem 'hipchat'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'foreman'

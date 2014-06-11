@@ -1,4 +1,4 @@
-<div class="cue" id="fullpage">
+<div class="cue" id="fullpage" data-spy="scroll" data-target="right_nav">
 	<header>
 		<a href="/"><img class="logo" src="<%= image_path('logo.png')%>"></a>
 		<ul>
@@ -10,10 +10,19 @@
 		</ul>
 		<button>Pre-Order now</button>
 	</header>
-	<div class="first section active">
+	<div class="right_nav">
+	<!-- 	<ul>	
+			<li><a class="load_first color"  href=""><span></span></a></li>
+			<li><a class="load_sec" href=""><span></span></a></li>
+			<li><a class="load_third" href=""><span></span></a></li>
+			<li><a class="load_fourth" href=""><span></span></a></li>
+			<li><a class="load_six" href=""><span></span></a></li>
+		</ul>
+	</div> -->
+	<div class="first section active" id="first_sec">
 		<img src="<%= image_path('first.jpg')%>">
 	</div>
-	<div class="second section">
+	<div class="second section" id="second_sec">
 		<div class="left">
 			<img src="<%= image_path('first.jpg')%>">
 		</div>
@@ -41,7 +50,7 @@
 			<div id="eighth"><img src="<%= image_path('bluetooth.png')%>"></div>
 		</div>
 	</div>
-	<div class="third section">
+	<div class="third section" id="third_sec">
 		<div class="myleft">
 			<p class="title">Information is Power</p>
 			<p>See how your body is responding to your lifestyle at the molecular level</p>
@@ -52,20 +61,26 @@
 			<div class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="<%= image_path('carousel1.png')%>">
+						<img src="<%= image_path('car1.png')%>">
 					</div>
 					<div class="item">
-						<img src="<%= image_path('carousel2.png')%>">
+						<img src="<%= image_path('car2.png')%>">
 					</div>
 					<div class="item">
-						<img src="<%= image_path('carousel3.png')%>">
+						<img src="<%= image_path('car3.png')%>">
+					</div>
+					<div class="item">
+						<img src="<%= image_path('car4.png')%>">
+					</div>
+					<div class="item">
+						<img src="<%= image_path('car5.png')%>">
 					</div>
 				</div>
 			</div>
 			<!-- <img src="<%= image_path('mob.png')%>"> -->
 		</div>
 	</div>
-	<div class="fourth section">
+	<div class="fourth section" id="fourth_sec">
 		<img src="<%= image_path('fourth.jpg')%>">
 		<div class="right">	
 			<div id="anim">
@@ -74,7 +89,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="six section">
+	<div class="six section" id="six_sec">
 		<div class="f1">
 			<span> <img src="<%= image_path('img1.png')%>"></span>
 			<span> <img src="<%= image_path('img2.png')%>"></span>

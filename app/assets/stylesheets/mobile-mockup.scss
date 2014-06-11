@@ -1,0 +1,188 @@
+$back: #333333;
+
+
+.mob-mockup {
+  color: #818181;
+  font-size: 16px;
+  
+  .padding{
+    padding: 0% 15%;
+  }
+
+  .section {
+    
+    .back-left {
+      background-image: url('mob.png');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      height: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+      }
+    }
+    .back-right {
+      background-image: url('mob.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      height: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 0px;
+        right: 27px;
+      }
+    }
+    .describe {
+      padding-top: 26%;
+      h1 {
+        font-size: 4em;
+      }
+      p {
+        font-size: 1.3em;
+        margin-top: 6%;
+      }  
+    }
+
+    .call-to-action {
+      height: 82%;
+      padding: 18%; 
+      img {
+        @include size(170px 230px);
+        float: right;
+
+      }
+      .oi {
+        color: #333333;
+        font-size: 3.5em;
+        padding: 4%;
+        a {
+          font-size: 0.6em;
+        }
+      }
+    }
+    
+    .footer {
+      @include clearfix;
+      background-color: $back;
+      color: white;
+      padding: 1% 15%;
+      /*padding: 20px 10px;*/
+      font-size: 0.9em;
+      text-align: center;
+      width: 100%;
+      .footer-title {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .list {
+        @include clearfix;
+        color: $back*3;
+        font-weight: bold;
+        line-height: 1.6;
+        .left {
+          width: 20px;
+          display: inline-block;
+        }
+        .right {
+          width: 40px;
+          display: inline-block;
+        }
+      }
+      .spec {
+        line-height: 1.3;
+        font-weight: normal;
+        color: $back*3;
+      }
+      .icons {
+        border-bottom: 1px dotted $back*1.8;
+        padding-bottom: 5px;
+        margin-top: 20px;
+        i {
+          margin: 0px 10px;
+        }
+      }
+      .copy {
+        font-size: 0.8em;
+        padding-top: 5px;
+        color: $back*2.5;
+      }
+    }
+  }
+  .home {
+    .blue {
+      position: relative;
+      height: 90%;
+      background-color: #3686be;
+      padding: 1% 15%;
+      .row {
+       .headline {
+          color: white;
+          font-size: 3.2em;
+          margin: 5% 0% 0% 1%;
+        }
+        .list-inline {
+          /*margin-top: 5px;*/
+          float: right;
+          a {
+            color: white;
+            font-size: 1.3em;
+            margin-left: 30px;
+            letter-spacing: 2px;
+            font-weight: bold;
+          }
+        }
+      }
+      .row2 {
+        color: white;
+        .text {
+            padding-left: 0px;
+            padding-top: 10%;
+          h1 {
+            font-size: 4em;
+          }
+          p {
+            font-size: 1.7em;
+            padding-top: 7%;
+          }
+        }
+        .right {
+          padding-top: 21.7%;
+          padding-right: 0px;
+          .input-group {
+          }
+          .msg {  
+            p {
+              font-size: 1.7em;
+              padding-top: 6.8%;
+            }
+            .oi {
+              img {
+                @include size(47px 65px);
+                background-color: white;
+              }
+              a {
+                color: white;
+                margin-left: 2%;
+              }
+            }
+          }
+        }
+        .scroll {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          font-size: 2em;
+          right: 49.5%;
+          i {
+            text-align: center;
+          }
+
+        }
+      }
+    }
+  } 
+}
