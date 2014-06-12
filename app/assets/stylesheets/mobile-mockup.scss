@@ -136,6 +136,9 @@ $back: #333333;
         color: white;
         font-weight: bold;
         margin-bottom: 10px;
+        .footer-logo {
+          width: 20px;
+        }
       }
       .list {
         @include clearfix;
@@ -160,6 +163,9 @@ $back: #333333;
         border-bottom: 1px dotted $back*1.8;
         padding-bottom: 5px;
         margin-top: 20px;
+        a {
+          color: white;
+        }
         i {
           margin: 0px 10px;
         }
