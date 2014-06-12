@@ -1,10 +1,122 @@
-$back: #333333;
+$footer-background: #333333;
 
 
-.mob-mockup {
+.web-mockup {
   color: #818181;
   font-size: 16px;
   
+  .home {
+    .home-container {
+      height: 90%;
+      background-color: #3986c0;
+      padding: 0% 15%;
+
+      .navbar-default {
+        background-color: #3686be;
+        border: none;
+      }
+
+      .nav-logo {
+        width: 40px;
+        height: 47px;
+        margin-top: -2%;
+      }
+      
+      .nav li a {
+        margin-left: 32px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      .home-body {
+          color: white;
+          .text {
+            padding-left: 0px;
+            padding-top: 6%;
+            h1 {
+              font-size: 4em;
+            }
+            .app-info {
+              font-size: 1.7em;
+              padding-top: 12%;
+            }
+            .form-inline {
+              @include clearfix;
+              margin-top: 10%;
+              .form-control {
+                border: none;
+                border-radius: 0px;
+                width: 65%;
+              }
+              .btn {
+                background-color: #48647c;
+                border: none;
+                border-radius: 0px;
+                color: white;
+                width: 34%;
+                float: right;
+                height: 47px;
+              }
+            }
+            .input-info {
+              font-size: 0.9em;
+            }
+            /*.call-to-action {
+              background-color: #48647c;
+              color: white;
+              height: 47px;
+              border-radius: 0px;
+              font-size: 1em;
+              margin-top: 10%;
+              &:hover {
+                text-decoration: underline;
+              }
+            }*/
+           /* .input-group {
+              padding-top: 7%;
+            }
+            }*/
+          }
+          .right {
+            padding-right: 0px;
+            .graphic {
+              width: 90%;
+              margin-left: 10%;
+              margin-top: 15%;
+            }
+            .msg {  
+              p {
+                font-size: 1.7em;
+                padding-top: 6.8%;
+              }
+              .oi {
+                img {
+                  @include size(47px 65px);
+                  background-color: white;
+                }
+                a {
+                  color: white;
+                  margin-left: 2%;
+                }
+              }
+            }
+          }
+          .icon {
+            text-align: center;
+            margin-top: 10%;
+            a {
+              color: white;
+              font-size: 2em;
+            }
+
+          }
+        }
+    }
+  } 
   .padding{
     padding: 0% 15%;
   }
@@ -23,6 +135,10 @@ $back: #333333;
           margin-left: 0px;
         }
       }
+      .fa {
+        color: #818181;
+        font-size: 2em;
+      }
     }
     .points-section1 {
       padding: 16% 12.7% 0% 13.1%;
@@ -35,6 +151,9 @@ $back: #333333;
     }
     .points-section4 {
       padding: 0% 13.2% 0% 13.1%;
+    }
+    .points-section5 {
+      padding: 4.3% 0% 0% 32%;
     }
     .top {
       height: 30%;
@@ -88,8 +207,20 @@ $back: #333333;
         clip: rect(0px, 299px, 709px, 0px);
       } 
     }
+
+    .call-to-action {
+      height: 83%;
+      padding:11% 15% 0% 15%;
+      .image {
+        img {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+    }
     .describe {
-      padding-top: 26%;
       h1 {
         font-size: 4em;
       }
@@ -105,26 +236,16 @@ $back: #333333;
     .col-lg-4 {
       height: 70%;
     }
-    .call-to-action {
-      height: 82%;
-      padding: 13%; 
-      img {
-        @include size(170px 230px);
-        float: right;
-      }
-      .oi {
-        color: #333333;
-        font-size: 3.5em;
-        padding: 4%;
-        a {
-          font-size: 0.6em;
-        }
-      }
+    .describe-padding {
+        padding-top: 26%;
+      
     }
+
     
     .footer {
       @include clearfix;
-      background-color: $back;
+      height: 17%;
+      background-color: $footer-background;
       color: white;
       padding: 1% 15%;
       /*padding: 20px 10px;*/
@@ -141,7 +262,7 @@ $back: #333333;
       }
       .list {
         @include clearfix;
-        color: $back*3;
+        color: $footer-background*3;
         font-weight: bold;
         line-height: 1.6;
         .left {
@@ -156,10 +277,10 @@ $back: #333333;
       .spec {
         line-height: 1.3;
         font-weight: normal;
-        color: $back*3;
+        color: $footer-background*3;
       }
       .icons {
-        border-bottom: 1px dotted $back*1.8;
+        border-bottom: 1px dotted $footer-background*1.8;
         padding-bottom: 5px;
         margin-top: 20px;
         a {
@@ -172,97 +293,8 @@ $back: #333333;
       .copy {
         font-size: 0.8em;
         padding-top: 5px;
-        color: $back*2.5;
+        color: $footer-background*2.5;
       }
     }
   }
-  .home {
-    .blue {
-      position: relative;
-      height: 90%;
-      background-color: #3686be;
-      padding: 0% 15%;
-      .row {
-        margin-left: 0px;
-        margin-right: 0px;
-        .header {
-          .logo {
-            width: 51 px;
-            height: 60px;
-            margin-top: -2%;
-          }
-         .headline {
-            color: white;
-            font-size: 3.2em;
-          }
-          nav {
-            display: inline-block;
-              float: right;
-              padding: 2% 0%;
-            ul {
-              li {
-                a {
-                margin-left: 32px;
-                  color: white;
-                  text-transform: uppercase;
-                  font-size: 14px;
-                  font-weight: bold;;
-                  text-decoration: none;
-                  letter-spacing: 1px;
-                }
-              }
-            }
-          }
-          
-        }
-      }
-      .row2 {
-        color: white;
-        .text {
-            padding-left: 0px;
-            padding-top: 10%;
-          h1 {
-            font-size: 4em;
-          }
-          p {
-            font-size: 1.7em;
-            padding-top: 7%;
-          }
-        }
-        .right {
-          padding-top: 21.7%;
-          padding-right: 0px;
-          .input-group {
-          }
-          .msg {  
-            p {
-              font-size: 1.7em;
-              padding-top: 6.8%;
-            }
-            .oi {
-              img {
-                @include size(47px 65px);
-                background-color: white;
-              }
-              a {
-                color: white;
-                margin-left: 2%;
-              }
-            }
-          }
-        }
-        .scroll {
-          position: absolute;
-          bottom: 10px;
-          color: white;
-          font-size: 2em;
-          right: 49.5%;
-          i {
-            text-align: center;
-          }
-
-        }
-      }
-    }
-  } 
 }

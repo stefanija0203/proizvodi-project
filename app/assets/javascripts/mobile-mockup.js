@@ -75,7 +75,22 @@ $(document).ready(function() {
       if(current==5) {
         $("#screen-details-2").finish();
         $(".points-section4 img").finish();
-      }    
+      }  
+      if(current==5 && next==6) {
+        $(".points img").hide();
+        $(".fa").hide();
+         setTimeout(function() {  
+          $(".points-section5 img").each(function( index ) {
+            $(this).delay((index+1)*d).fadeIn(f);
+            // console.log( index + ": " + $( this ).attr('alt') );
+          });
+          $(".fa").show();
+        }, 1000);
+        
+      } 
+      if(current==6) {
+        $(".points-section5 img").finish(); 
+      }
 		}
 	});
 });
