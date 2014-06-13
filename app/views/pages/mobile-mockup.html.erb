@@ -2,174 +2,120 @@
   
   <div class="section home">
     <div class="home-container">  
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <%= image_tag('navbar_white_1.png', class: "nav-logo")%>
-          </a>
-        </div>
-      
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">TIM</a></li>
-            <li><a href="#">PARTNERI</a></li>
-            <li><a href="#">BLOG</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+      <div class="container container-top">  
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <%= image_tag('navbar_white_1.png', class: "nav-logo")%>
+            </a>
+          </div>
+        
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">TIM</a></li>
+              <li><a href="#">PARTNERI</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
 
-      <div class="home-body">
-        <div class="col-lg-6 col-md-6 text">
-          <h1>Birajmo bolje zajedno</h1>
-          <p class="app-info">Da li imate problema da izaberete najbolji proizvod za vas ili vaše najbliže? <br /><br />
-            Mi imamo. Zato stvaramo <strong>Ideus</strong>, online mjesto koje spaja ljude željne da nauče više o proizvodima kao i da to znanje podijele sa drugima.</p>
-          <form class="form-inline">
-            <input class="form-control input-lg col-lg-8" type="email" placeholder="Vaša e-mail adresa" />
-            <button class="btn btn-lg col-lg-4" type="submit">Prijavi se</button>
-          </form>
-          <p class="input-info">Ukoliko želiš da nam pomognes prijavi se i postani deo Ideus zajednice</p class="input-info">
-        </div>
+        <div class="home-body">
+          <div class="col-lg-6 col-md-6 col-sm-6 text">
+            <h1>Birajmo bolje zajedno</h1>
+            <p class="app-info">Da li imate problema da izaberete najbolji proizvod za Vas ili Vaše najbliže? <br /><br />
+              Mi imamo. Zato stvaramo <strong>Ideus</strong>, online mjesto koje spaja ljude željne da nauče više o proizvodima kao i da to znanje podijele sa drugima.</p>
+            <form class="form-inline">
+              <input class="form-control input-lg col-lg-8 col-md-8" type="email" placeholder="Vaša e-mail adresa" />
+              <button class="btn btn-lg col-lg-4 col-md-4" type="submit">Prijavi se</button>
+            </form>
+            <p class="input-info">Ukoliko želiš da nam pomognes prijavi se i postani deo Ideus zajednice</p class="input-info">
+          </div>
 
-        <div class="col-lg-6 col-md-6 right">
-          <%= image_tag('img-home.png', class: "graphic")%>
-        </div>
-        <div class="icon col-lg-12">  
-          <a href=""><i class="fa fa-chevron-down"></i></a>
+          <div class="col-lg-6 col-md-6 col-sm-6 right">
+            <%= image_tag('img-home.png', class: "graphic")%>
+          </div>
+          <div class="icon col-lg-12 col-md-12">  
+            <a href=""><i class="fa fa-chevron-down"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="section padding">
-    <div class="points points-section1">
-      <% 7.times do %>
-        <%= image_tag('points.png', class: "points-right")%> <br />
-      <% end %>
-    </div>
-    <div class="col-lg-7 col-md-7 describe describe-padding">
-      <h1>Login</h1>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div class="col-lg-5 col-md-5 back-right">
-      <%= image_tag('car1.png')%>
-    </div>
-  </div>
-  
-  <div class="section padding">
-      <div class="points points-section2">
-        <!-- vertical right -->
-        <% 8.times do %>
-          <%= image_tag('points.png', class: "points-right")%> <br />
-        <% end %>
-        
-        <!-- horizontal from right to left -->
-        <% 40.times do %>
-          <%= image_tag('points.png', class: "points-right points-margin")%> 
-        <% end %>
-        
-        <br />
-        
-        <!-- vertical left -->
-        <% 7.times do %>
-          <%= image_tag('points.png')%> <br />
-        <% end %>
+    <div class="container"> 
+      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
+        <h1>Login</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    <div class="col-lg-5 col-md-5 back-left">
-      <%= image_tag('car2.png')%>
-    </div>
-    <div class="col-lg-7 col-md-7 describe describe-padding">
-      <h1>Alergeni</h1>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="col-lg-5 col-md-5 col-sm-5 back-right">
+        <%= image_tag('car1.png')%>
+      </div>
     </div>
   </div>
   
   <div class="section padding">
-    <div class="points points-section3">
-      <!-- vertical left -->
-      <% 5.times do %>
-        <%= image_tag('points.png')%> <br />
-      <% end %>
-      
-      <!-- horizontal from left to right -->
-      <% 40.times do %>
-        <%= image_tag('points.png')%>
-      <% end %>
- 
-      <br />
- 
-      <!-- vertical both right and left -->
-      <% 10.times do %>
-        <%= image_tag('points.png')%> <%= image_tag('points.png', class: "points-right")%> <br/>
-      <% end %>
+    <div class="container">
+      <div class="col-lg-5 col-md-5 col-sm-5 back-left">
+        <%= image_tag('car2.png')%>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
+        <h1>Alergeni</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
-
+  </div>
+  
+  <div class="section padding">
     <div class="top">  
-      <h1>Skenirajte ili pretražite</h1>
+      <h1>Skenirajte <br /> ili pretražite</h1>
     </div>
-    <div class="col-lg-4 col-md-4 back-left">
-      <%= image_tag('car3.png')%>
-    </div>
-    <div class="col-lg-4 col-md-4 padd ">
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 back2-right">
-      <%= image_tag('car4.png', id: "screen-details-1")%>
+    <div class="container">  
+      <div class="col-lg-6 col-md-5 col-sm-5 back-left">
+        <%= image_tag('car3.png')%>
+      </div>
+      <!-- <div class="col-lg-4 col-md-4 padd ">
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum nisi ut aliquip ex ea commodo consequat.</p>
+      </div> -->
+      <div class="col-lg-6 col-md-5  col-sm-5  back2-right">
+        <%= image_tag('car4.png', id: "screen-details-1")%>
+      </div>
     </div>
   </div>
   
   <div class="section padding">
-    <div class="points points-section4">
-      <% 7.times do %>
-        <%= image_tag('points.png')%> <%= image_tag('points.png', class: "points-right")%> <br/>
-      <% end %>
-      
-      <% 40.times do %>
-        <%= image_tag('points.png')%> 
-      <% end %>
-      
-      <br />
-
-      <% 8.times do %>
-        <%= image_tag('points.png', class: "points-right")%> <br />
-      <% end %>
-    </div>
-
-    <div class="col-lg-7 col-md-7 describe describe-padding">
-      <h1>Detalji o proizvodu</h1>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div class="col-lg-5 col-md-5 back2-right">
-      <%= image_tag('car5.png', id: "screen-details-2")%>
+    <div class="container">
+      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
+        <h1>Detalji o proizvodu</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 back2-right">
+        <%= image_tag('car5.png', id: "screen-details-2")%>
+      </div>
     </div>
   </div>
 
   <div class="section">
-    <div class="call-to-action col-lg-12">
-    <div class=" points points-section5">
-        <% 23.times do %>
-          <%= image_tag('points.png')%> 
-        <% end %>
-        <span class="fa fa-chevron-right"></span>
-
-    </div>
-      <div class="col-lg-6 col-md-6 describe">
-        <h1>Vaša podrška</h1>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="image col-lg-5 col-lg-offset-1 col-md-5">
-        <a class="col-lg-6 col-lg-offset-6" href="http://otvoreneideje.me/OI2014/glasanje/"><%= image_tag('logooi.png')%></a>
+    <div class="container container-footer">  
+      <div class="call-to-action col-lg-12 col-md-12">
+        <div class="col-lg-8 col-md-8 describe">
+          <h1>Vaša podrška</h1>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="image col-lg-4 col-md-4">
+          <a class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 " href="http://otvoreneideje.me/OI2014/glasanje/"><%= image_tag('logooi.png')%></a>
+        </div>
       </div>
     </div>
-
-    <div class="footer col-lg-12">  
+    <div class="footer">  
       <div class="footer-down">
         <div class="footer-title">
           <%= image_tag('navbar_white_1.png', class: "footer-logo")%>
@@ -180,14 +126,15 @@
           <div class="mail">contact@ideus.me</div>
         </div>
       </div>
-      <div class="icons col-lg-2 col-lg-offset-5">
+      <div class="icons col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
       </div>
-      <div class="copy col-lg-12">
+      <div class="copy col-lg-12 col-md-12">
         <span>Copyright &copy 2014 IDEUS LTD.</span>
       </div>
     </div>
   </div>
+  
 </div>

@@ -34,44 +34,83 @@ $(document).ready(function() {
       }
 
       if((current==3 && next==4) || (current==5 && next==4)) {
-        $("#screen-details-1").css({"bottom": "-338px", "clip": "rect(0px, 299px, 503px, 0px)" });
-        $("#screen-details-1").delay(3000).animate({ bottom : 0},
-        {
-          duration:5000,
-          step: function(now, fx) {
-              $(this).css('clip', 'rect(' +(now+338)+'px , 299px, '+(now+841)+'px, 0px)')
-          }
-        }, 1000);
-        $(".points img").hide();
-        setTimeout(function() {  
-          $(".points-section3 img").each(function( index ) {
-            $(this).delay((index+1)*d).fadeIn(f);
-            // console.log( index + ": " + $( this ).attr('alt') );
-          });
-        }, 1000);
+        if(determine_screen() == 1) {
+          $("#screen-details-1").css({"bottom": "-297px", "clip": "rect(0px, 299px, 503px, 0px)" });
+          $("#screen-details-1").delay(3000).animate({ bottom : 0},
+          {
+            duration:5000,
+            step: function(now, fx) {
+                $(this).css('clip', 'rect(' +(now+297)+'px , 299px, '+(now+841)+'px, 0px)')
+            }
+          }, 1000);
+          $(".points img").hide();
+          setTimeout(function() {  
+            $(".points-section3 img").each(function( index ) {
+              $(this).delay((index+1)*d).fadeIn(f);
+              // console.log( index + ": " + $( this ).attr('alt') );
+            });
+          }, 1000);
+        } else {
+          $("#screen-details-1").css({"bottom": "-338px", "clip": "rect(0px, 299px, 503px, 0px)" });
+          $("#screen-details-1").delay(3000).animate({ bottom : 0},
+          {
+            duration:5000,
+            step: function(now, fx) {
+                $(this).css('clip', 'rect(' +(now+338)+'px , 299px, '+(now+841)+'px, 0px)')
+            }
+          }, 1000);
+          $(".points img").hide();
+          setTimeout(function() {  
+            $(".points-section3 img").each(function( index ) {
+              $(this).delay((index+1)*d).fadeIn(f);
+              // console.log( index + ": " + $( this ).attr('alt') );
+            });
+          }, 1000);  
+        }
       }
+      
       if(current==4) {
         $("#screen-details-1").finish();
         $(".points-section3 img").finish();
       }
 
       if((current==4 && next==5) || (current==6 && next==5)) {
-        $("#screen-details-2").css({"bottom": "-206px", "clip": "rect(0px, 299px, 503px, 0px)" });
-        $("#screen-details-2").delay(3000).animate({ bottom : 0},
-        {
-          duration:5000,
-          step: function(now, fx) {
-              $(this).css('clip', 'rect(' +(now+206)+'px , 299px, '+(now+709)+'px, 0px)')
-          }
-        }, 1000); 
-        $(".points img").hide();
-        setTimeout(function() {  
-          $(".points-section4 img").each(function( index ) {
-            $(this).delay((index+1)*d).fadeIn(f);
-            // console.log( index + ": " + $( this ).attr('alt') );
-          });
-        }, 1000);
+        if(determine_screen() == 1) {
+        
+          $("#screen-details-2").css({"bottom": "-175px", "clip": "rect(0px, 299px, 503px, 0px)" });
+          $("#screen-details-2").delay(3000).animate({ bottom : 0},
+          {
+            duration:5000,
+            step: function(now, fx) {
+                $(this).css('clip', 'rect(' +(now+175)+'px , 299px, '+(now+709)+'px, 0px)')
+            }
+          }, 1000); 
+          $(".points img").hide();
+          setTimeout(function() {  
+            $(".points-section4 img").each(function( index ) {
+              $(this).delay((index+1)*d).fadeIn(f);
+              // console.log( index + ": " + $( this ).attr('alt') );
+            });
+          }, 1000);
+        } else {
+          $("#screen-details-2").css({"bottom": "-206px", "clip": "rect(0px, 299px, 503px, 0px)" });
+          $("#screen-details-2").delay(3000).animate({ bottom : 0},
+          {
+            duration:5000,
+            step: function(now, fx) {
+                $(this).css('clip', 'rect(' +(now+206)+'px , 299px, '+(now+709)+'px, 0px)')
+            }
+          }, 1000); 
+          $(".points img").hide();
+          setTimeout(function() {  
+            $(".points-section4 img").each(function( index ) {
+              $(this).delay((index+1)*d).fadeIn(f);
+              // console.log( index + ": " + $( this ).attr('alt') );
+            });
+          }, 1000);
+        }
       }
+
       if(current==5) {
         $("#screen-details-2").finish();
         $(".points-section4 img").finish();
@@ -94,3 +133,16 @@ $(document).ready(function() {
 		}
 	});
 });
+
+
+function determine_screen(){
+  var sec_width = $('.section').width();
+  if (sec_width > 500 && sec_width < 1200 ){
+    console.log("medium");
+    return 1;
+  }
+  else {
+    console.log("small or big");
+    return 2;
+  }
+}

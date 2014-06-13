@@ -41,7 +41,7 @@ html, body {
     transition: all 0.3s ease-out;
 }
 .section.table, .slide.table {
-    display: table;
+    /*display: table;*/
     width: 100%;
 }
 .tableCell {
