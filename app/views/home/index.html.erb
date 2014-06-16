@@ -1,4 +1,4 @@
-<div class="web-mockup" id="fullpage">
+<div class="index-mockup" id="fullpage">
   
   <div class="section home">
     <div class="home-container">  
@@ -13,7 +13,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <%= image_tag('navbar_white_1.png', class: "nav-logo")%>
+              <%= image_tag('logo_white.png', class: "nav-logo")%>
             </a>
           </div>
         
@@ -28,21 +28,21 @@
         </nav>
 
         <div class="home-body">
-          <div class="col-lg-6 col-md-6 col-sm-6 text">
+          <div class="col-lg-6 col-md-6 text">
             <h1>Birajmo bolje zajedno</h1>
             <p class="app-info">Da li imate problema da izaberete najbolji proizvod za Vas ili Vaše najbliže? <br /><br />
               Mi imamo. Zato stvaramo <strong>Ideus</strong>, online mjesto koje spaja ljude željne da nauče više o proizvodima kao i da to znanje podijele sa drugima.</p>
             <form class="form-inline">
-              <input class="form-control input-lg col-lg-8 col-md-8 col-sm-8" type="email" placeholder="Vaša e-mail adresa" />
-              <button class="btn btn-lg col-lg-4 col-md-4 col-sm-4" type="submit">Prijavi se</button>
+              <input class="form-control input-lg col-lg-8 col-md-8" type="email" placeholder="Vaša e-mail adresa" />
+              <button class="btn btn-lg col-lg-4 col-md-4" type="submit">Prijavi se</button>
             </form>
             <p class="input-info">Ukoliko želiš da nam pomognes prijavi se i postani deo Ideus zajednice</p class="input-info">
           </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-6 right">
+          <div class="col-lg-6 col-md-6 right">
             <%= image_tag('img-home.png', class: "graphic")%>
           </div>
-          <div class="icon col-lg-12 col-md-12 col-sm-12">  
+          <div class="icon col-lg-12 col-md-12">  
             <a href=""><i class="fa fa-chevron-down"></i></a>
           </div>
         </div>
@@ -51,23 +51,11 @@
   </div>
 
   <div class="section padding">
-    <div class="container"> 
-      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
-        <h1>Login</h1>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-lg-5 col-md-5 col-sm-5 back-right">
-        <%= image_tag('car1.png')%>
-      </div>
-    </div>
-  </div>
-  
-  <div class="section padding">
     <div class="container">
-      <div class="col-lg-5 col-md-5 col-sm-5 back-left">
+      <div class="col-lg-5 col-md-5 back-left">
         <%= image_tag('car2.png')%>
       </div>
-      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
+      <div class="col-lg-7 col-md-7 describe">
         <h1>Alergeni</h1>
         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
@@ -75,29 +63,34 @@
   </div>
   
   <div class="section padding">
-    <div class="top">  
-      <h1>Skenirajte <br /> ili pretražite</h1>
+    <div class="container"> 
+      <div class="col-lg-7 col-md-7 describe">
+        <h1>Pretražite</h1>
+      </div> 
+      <div class="col-lg-5 col-md-5 back2-right">
+        <%= image_tag('car4.png', id: "screen-details-1")%>
+      </div>
     </div>
+  </div>
+
+  <div class="section padding">
     <div class="container">  
-      <div class="col-lg-6 col-md-5 col-sm-5 back-left">
+      <div class="col-lg-5 col-md-5 back-left">
         <%= image_tag('car3.png')%>
       </div>
-      <!-- <div class="col-lg-4 col-md-4 padd ">
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum nisi ut aliquip ex ea commodo consequat.</p>
-      </div> -->
-      <div class="col-lg-6 col-md-5  col-sm-5  back2-right">
-        <%= image_tag('car4.png', id: "screen-details-1")%>
+      <div class="col-lg-7 col-md-7 describe">
+        <h1>Skenirajte</h1>
       </div>
     </div>
   </div>
   
   <div class="section padding">
     <div class="container">
-      <div class="col-lg-7 col-md-7 col-sm-7 describe describe-padding">
+      <div class="col-lg-7 col-md-7 describe">
         <h1>Detalji o proizvodu</h1>
         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="col-lg-5 col-md-5 col-sm-5 back2-right">
+      <div class="col-lg-5 col-md-5 back2-right">
         <%= image_tag('car5.png', id: "screen-details-2")%>
       </div>
     </div>
@@ -105,14 +98,11 @@
 
   <div class="section">
     <div class="container container-footer">  
-      <div class="call-to-action col-lg-12 col-md-12 col-sm-12">
-        <div class="col-lg-8 col-md-8 col-sm-8 describe">
-          <h1>Vaša podrška</h1>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="image col-lg-4 col-md-4 col-sm-4">
-          <a class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 " href="http://otvoreneideje.me/OI2014/glasanje/"><%= image_tag('logooi.png')%></a>
-        </div>
+      <div class="col-lg-4 col-md-4 describe">
+        <h1>Početak</h1>
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <%= image_tag('issues.png', class: "begin-photo")%>
       </div>
     </div>
     <div class="footer">  
@@ -131,7 +121,7 @@
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
       </div>
-      <div class="copy col-lg-12 col-md-12 col-sm-12">
+      <div class="copy col-lg-12 col-md-12">
         <span>Copyright &copy 2014 IDEUS LTD.</span>
       </div>
     </div>

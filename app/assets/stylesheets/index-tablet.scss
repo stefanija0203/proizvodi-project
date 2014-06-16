@@ -1,9 +1,9 @@
 $footer-background: #333333;
 
 
-.web-mockup {
+.tablet-mockup {
   color: #818181;
-  font-size: 16px;
+  font-size: 11px;
 
   .home {
     .home-container {
@@ -15,7 +15,7 @@ $footer-background: #333333;
       }
 
       .container {
-        width: 960px;
+        width: 750px;
 
         .navbar-default {
           background-color: #3686be;
@@ -23,13 +23,12 @@ $footer-background: #333333;
         }
 
         .nav-logo {
-          width: 40px;
-          height: 47px;
-          margin-top: -2%;
+          height: 30px;
+          margin-top: -5px;
         }
         
         .nav li a {
-          margin-left: 32px;
+          margin-left: 20px;
           color: white;
           text-transform: uppercase;
           font-size: 14px;
@@ -46,10 +45,10 @@ $footer-background: #333333;
             padding-top: 6%;
             
             h1 {
-              font-size: 2.7em;
+              font-size: 3.4em;
             }
             .app-info {
-              font-size: 1.1em;
+              font-size: 1.4em;
               padding-top: 12%;
             }
 
@@ -68,11 +67,11 @@ $footer-background: #333333;
                 color: white;
                 width: 34%;
                 float: right;
-                height: 47px;
+                height: 34px;
               }
             }
             .input-info {
-              font-size: 0.8em;
+              font-size: 1em;
             }
           }
 
@@ -101,11 +100,9 @@ $footer-background: #333333;
   .section {
     position: relative;
     .top {
-      /*height: 30%;*/
       text-align: center;
       h1  {  
         font-size: 4em;
-        /*padding: 16%;*/
       }
     }
     .container {
@@ -114,8 +111,8 @@ $footer-background: #333333;
       left: 0px;
       right: 0px;
       padding: 0px;
-      width: 960px;
-      height: 611px;  
+      width: 750px;
+      height: 440px;  
 
       .describe {
         h1 {
@@ -133,10 +130,12 @@ $footer-background: #333333;
         background-position: left bottom;
         height: 100%;
         position: relative;
+        background-size: 80%;
         img {
           position: absolute;
-          bottom: 0px;
-          left: 30px;
+          width: 67%;
+          bottom: -1px;
+          left: 21px;
         }
       }
 
@@ -146,10 +145,12 @@ $footer-background: #333333;
         background-position: right bottom;
         height: 100%;
         position: relative;
+        background-size: 80%;
         img {
           position: absolute;
+          width: 67%;
           bottom: 0px;
-          right: 27px;
+          right: 19px;
         }
       }
 
@@ -159,52 +160,21 @@ $footer-background: #333333;
         background-position: right bottom;
         position: relative;
         height: 100%;
+        background-size: 80%;
         #screen-details-1 {
+          width: 67%;
           position: absolute;
-          bottom: -338px;
-          right: 30px;
+          bottom: -253px;
+          right: 19px;
           clip: rect(0px, 299px, 503px, 0px);
         } 
         #screen-details-2 {
+          width: 67%;
           position: absolute;
-          bottom: -206px;
-          right: 30px;
+          bottom: -150px;
+          right: 19px;
           clip: rect(0px, 299px, 709px, 0px);
         } 
-      }
-
-      @media (min-width: 768px) and (max-width: 991px) {
-        .back-right {
-          background-size: 80%;
-          img {
-            width: 67%;
-            right: 22px;
-          }
-        }
-        .back-left {
-          background-size: 80%;
-          img {
-            width: 67%;
-            left: 25px;
-          }
-        }
-        .back2-right {
-          background-size: 80%;
-          #screen-details-1 {
-            width: 67%;
-            position: absolute;
-            bottom: -279px;
-            right: 22px;
-            clip: rect(0px, 299px, 503px, 0px);
-          } 
-          #screen-details-2 {
-            width: 67%;
-            position: absolute;
-            bottom: -175px;
-            right: 22px;
-            clip: rect(0px, 299px, 709px, 0px);
-          } 
-        }
       }
 
       .call-to-action {
@@ -215,6 +185,10 @@ $footer-background: #333333;
 
       .container-footer {
         top: 0px;
+      }
+
+      .begin-photo {
+        width: 100%;
       }
     }
 
@@ -266,5 +240,4 @@ $footer-background: #333333;
       }
     }
   }
-
 }
