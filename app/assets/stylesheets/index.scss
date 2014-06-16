@@ -99,12 +99,6 @@ $footer-background: #333333;
 
   .section {
     position: relative;
-    .top {
-      text-align: center;
-      h1  {  
-        font-size: 4em;
-      }
-    }
     .container {
       position: absolute;
       bottom: 0px;
@@ -113,6 +107,7 @@ $footer-background: #333333;
       padding: 0px;
       width: 960px;
       height: 650px;  
+
 
       .describe {
         margin-top: 15px;
