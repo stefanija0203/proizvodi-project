@@ -1,0 +1,82 @@
+$sens: #e6e6e6;
+$gr: #2e2d2a;
+
+.phone-mockup {
+  background-color: white;
+  .container {
+    @include clearfix;
+    /*background-color: #f8f8f8;*/
+
+    form {
+      margin-bottom: 15px;
+    }
+
+    .cstyle2 {
+      display: block;
+      height: 90px;
+      border-radius: 6px;
+      border: 1px solid $sens/1.1;
+      margin-bottom: 6px;
+      background-color: white;
+
+      .pic {
+        border-right: 1px solid $sens;
+        padding: 10px 0px;
+        background-color: white;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        img {
+          @include size(87px 68px);
+        }
+      }
+
+      .pad {
+        @include clearfix;
+        padding: 5px;
+        background-color: white;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        .line {
+          height: 62px;
+          padding: 0px;
+          .title {
+            font-size: 0.9em;
+            line-height: 1.2;
+            padding: 4px;
+            color: $gr*1.5;
+            .match {
+              font-weight: bold;
+            }
+          }
+          .top-right {
+            float: right;
+            font-size: 1.2em;
+            padding: 0px;
+            margin-top: -7px;
+            color: white;
+            text-align: center;
+            border-radius: 2px;
+          }
+          .check {
+            background-color: #27ae61;
+            border: 1px solid #2f972f;
+          }
+          .question {
+            background-color: #f2c311;
+            border: 1px solid #ffcf1a;
+          }
+          .exclamation {
+            background-color: #d55401;
+            border: 1px solid #d05c0e;
+          }
+        }
+        .manufacturer {
+          font-size: 0.8em;
+          color: $gr*2;
+          height: 16px;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+}
